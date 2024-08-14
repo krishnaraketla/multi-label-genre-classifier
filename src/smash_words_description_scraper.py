@@ -8,6 +8,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 from smash_words_genres_scraper import get_genres
 import json
+import pandas as pd
 
 # Set up Selenium with Chrome
 chrome_options = Options()
@@ -53,7 +54,7 @@ def get_description(url):
         print(f"An error occurred: {e}")
         return ""
     
-def get_genre_ids(genres, genres_map_file='genres_data/genres_map.json'):
+def get_genre_ids(genres, genres_map_file='data/genres_map.json'):
     # Load the genres_map from the JSON file
     with open(genres_map_file, 'r', encoding='utf-8') as jsonfile:
         genres_map = json.load(jsonfile)
@@ -71,14 +72,37 @@ def get_genre_ids(genres, genres_map_file='genres_data/genres_map.json'):
     return genre_ids
     
 if __name__ == "__main__":
-    base_url = 'https://www.smashwords.com/books/view/1592962'
+    # Load the books map
+    with open('data/books_map.json', 'r', encoding='utf-8') as jsonfile:
+        books_map = json.load(jsonfile)
     
-    # Get the description
-    # description = get_description(base_url)
-    genres = get_genres(base_url)
+    # Create a list to store the data
+    data = []
     
-    genre_ids = get_genre_ids(genres)
-    print(genre_ids)
-
+    # Iterate over each book in the books_map
+    for book_url, book_title in books_map.items():
+        print(f"Processing {book_title}...")
+        
+        # Get the description and genres
+        description = get_description(book_url)
+        genres = get_genres(book_url)
+        
+        # Get genre IDs
+        genre_ids = get_genre_ids(genres)
+        
+        # Append data to the list
+        data.append({
+            "description": description,
+            "genres": ", ".join(map(str, genre_ids))
+        })
+    
+    # Create a DataFrame from the data
+    df = pd.DataFrame(data)
+    
+    # Save the DataFrame to a CSV file
+    df.to_csv('books_data.csv', index=False, encoding='utf-8')
+    
     # Close the browser
     driver.quit()
+
+    print("Data saved to 'books_data.csv'")
