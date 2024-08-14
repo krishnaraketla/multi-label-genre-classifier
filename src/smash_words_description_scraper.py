@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 from smash_words_genres_scraper import get_genres
+import json
 
 # Set up Selenium with Chrome
 chrome_options = Options()
@@ -52,6 +53,23 @@ def get_description(url):
         print(f"An error occurred: {e}")
         return ""
     
+def get_genre_ids(genres, genres_map_file='genres_data/genres_map.json'):
+    # Load the genres_map from the JSON file
+    with open(genres_map_file, 'r', encoding='utf-8') as jsonfile:
+        genres_map = json.load(jsonfile)
+    
+    genre_ids = []
+    
+    # Iterate through the genres dictionary
+    for genre_url, genre_name in genres.items():
+        # Check if the genre_name exists in the genres_map
+        if genre_name in genres_map:
+            genre_ids.append(genres_map[genre_name]['id'])
+        else:
+            print(f"Genre '{genre_name}' not found in genres_map.")
+    
+    return genre_ids
+    
 if __name__ == "__main__":
     base_url = 'https://www.smashwords.com/books/view/1592962'
     
@@ -59,7 +77,8 @@ if __name__ == "__main__":
     # description = get_description(base_url)
     genres = get_genres(base_url)
     
-    print(genres)
+    genre_ids = get_genre_ids(genres)
+    print(genre_ids)
 
     # Close the browser
     driver.quit()
