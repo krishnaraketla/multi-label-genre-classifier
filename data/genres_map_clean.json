@@ -1,0 +1,1107 @@
+{
+    "Adventure": {
+        "id": 1        
+    },    "African American fiction": {
+        "id": 2        
+    },    "Alternative history": {
+        "id": 3        
+    },    "Anthologies": {
+        "id": 4        
+    },    "Biographical": {
+        "id": 5        
+    },    "Business": {
+        "id": 6        
+    },    "Children’s books": {
+        "id": 7        
+    },    "Christian": {
+        "id": 8        
+    },    "Classics": {
+        "id": 9        
+    },    "Coming of age": {
+        "id": 10        
+    },    "Cultural & ethnic themes": {
+        "id": 11        
+    },    "Educational": {
+        "id": 12        
+    },    "Fairy tales": {
+        "id": 13        
+    },    "Fantasy": {
+        "id": 14        
+    },    "Gothic": {
+        "id": 15        
+    },    "Graphic novels & comics": {
+        "id": 16        
+    },    "Historical": {
+        "id": 17        
+    },    "Holiday": {
+        "id": 18        
+    },    "Horror": {
+        "id": 19        
+    },    "Humor & comedy": {
+        "id": 20        
+    },    "Inspirational": {
+        "id": 21        
+    },    "LGBTQ+": {
+        "id": 22        
+    },    "Literary collections": {
+        "id": 23        
+    },    "Literature": {
+        "id": 24        
+    },    "Mashups": {
+        "id": 25        
+    },    "Mystery & detective": {
+        "id": 26        
+    },    "Plays & Screenplays": {
+        "id": 27        
+    },    "Religious": {
+        "id": 28        
+    },    "Romance": {
+        "id": 29        
+    },    "Science fiction": {
+        "id": 30        
+    },    "Sports": {
+        "id": 31        
+    },    "Themes & motifs": {
+        "id": 32        
+    },    "Thriller & suspense": {
+        "id": 33        
+    },    "Transgressional fiction": {
+        "id": 34        
+    },    "Urban": {
+        "id": 35        
+    },    "Visionary & metaphysical": {
+        "id": 36        
+    },    "Western": {
+        "id": 37        
+    },    "Women's fiction": {
+        "id": 38        
+    },    "Young adult or teen": {
+        "id": 39        
+    },    "Nonfiction": {
+        "id": 40        
+    },    "Antiques & Collectibles": {
+        "id": 41        
+    },    "Art, Architecture, Photography": {
+        "id": 42        
+    },    "Biography": {
+        "id": 43        
+    },    "Business & Economics": {
+        "id": 44        
+    },    "Career Guides": {
+        "id": 45        
+    },    "Children's Books": {
+        "id": 46        
+    },    "Comics (nonfictional)": {
+        "id": 47        
+    },    "Computers & Internet": {
+        "id": 48        
+    },    "Cooking, Food, Wine, Spirits": {
+        "id": 49        
+    },    "Education & Study Guides": {
+        "id": 50        
+    },    "Engineering, trades, & technology": {
+        "id": 51        
+    },    "Entertainment": {
+        "id": 52        
+    },    "General reference": {
+        "id": 53        
+    },    "Health, wellbeing, & medicine": {
+        "id": 54        
+    },    "History": {
+        "id": 55        
+    },    "Home & Garden": {
+        "id": 56        
+    },    "Inspiration": {
+        "id": 57        
+    },    "Language Instruction": {
+        "id": 58        
+    },    "Law": {
+        "id": 59        
+    },    "Literary criticism": {
+        "id": 60        
+    },    "Music": {
+        "id": 61        
+    },    "New Age": {
+        "id": 62        
+    },    "Parenting": {
+        "id": 63        
+    },    "Philosophy": {
+        "id": 64        
+    },    "Politics & Current Affairs": {
+        "id": 65        
+    },    "Psychology": {
+        "id": 66        
+    },    "Publishing": {
+        "id": 67        
+    },    "Reference": {
+        "id": 68        
+    },    "Relationships & Family": {
+        "id": 69        
+    },    "Religion & Spirituality": {
+        "id": 70        
+    },    "Science & Nature": {
+        "id": 71        
+    },    "Self-improvement": {
+        "id": 72        
+    },    "Sex & Relationships": {
+        "id": 73        
+    },    "Social Science": {
+        "id": 74        
+    },    "Sports & outdoor recreation": {
+        "id": 75        
+    },    "Transportation": {
+        "id": 76        
+    },    "Travel": {
+        "id": 77        
+    },    "True Crime": {
+        "id": 78        
+    },    "Weddings": {
+        "id": 79        
+    },    "Essay": {
+        "id": 80        
+    },    "Plays": {
+        "id": 81        
+    },    "Poetry": {
+        "id": 82        
+    },    "Screenplays": {
+        "id": 83        
+    },    "Fiction": {
+        "id": 84        
+    },    "Action": {
+        "id": 85        
+    },    "General": {
+        "id": 86        
+    },    "Men’s adventure": {
+        "id": 87        
+    },    "Sea adventures": {
+        "id": 88        
+    },    "War & military adventure": {
+        "id": 89        
+    },    "Contemporary woman": {
+        "id": 90        
+    },    "Urban life": {
+        "id": 91        
+    },    "Drama/Theatrical": {
+        "id": 92        
+    },    "Flash fiction": {
+        "id": 93        
+    },    "Graphic novels/comics/manga": {
+        "id": 94        
+    },    "Mystery": {
+        "id": 95        
+    },    "Poetry - general": {
+        "id": 96        
+    },    "Poetry - multi-author": {
+        "id": 97        
+    },    "Poetry - single author": {
+        "id": 98        
+    },    "Short stories - multi-author": {
+        "id": 99        
+    },    "Action & Adventure / Pirates": {
+        "id": 100        
+    },    "Action & Adventure / Survival Stories": {
+        "id": 101        
+    },    "Activity Books": {
+        "id": 102        
+    },    "Animals": {
+        "id": 103        
+    },    "Animals / Dinosaurs & Prehistoric Creatures": {
+        "id": 104        
+    },    "Art": {
+        "id": 105        
+    },    "Biographical / Canada": {
+        "id": 106        
+    },    "Biographical / European": {
+        "id": 107        
+    },    "Biographical / General": {
+        "id": 108        
+    },    "Biographical / Other": {
+        "id": 109        
+    },    "Amish & Mennonite": {
+        "id": 110        
+    },    "Classical & allegory": {
+        "id": 111        
+    },    "Contemporary": {
+        "id": 112        
+    },    "Futuristic": {
+        "id": 113        
+    },    "Short stories": {
+        "id": 114        
+    },    "Asian American": {
+        "id": 115        
+    },    "Cultural interest, general": {
+        "id": 116        
+    },    "Hispanic & Latino": {
+        "id": 117        
+    },    "Jewish": {
+        "id": 118        
+    },    "Dark": {
+        "id": 119        
+    },    "Epic": {
+        "id": 120        
+    },    "Paranormal": {
+        "id": 121        
+    },    "Comics": {
+        "id": 122        
+    },    "Contemporary women": {
+        "id": 123        
+    },    "Crime & mystery": {
+        "id": 124        
+    },    "Graphic novel": {
+        "id": 125        
+    },    "Ancient": {
+        "id": 126        
+    },    "Australia & New Zealand": {
+        "id": 127        
+    },    "Canada": {
+        "id": 128        
+    },    "Classical Greece & Rome": {
+        "id": 129        
+    },    "Colonial America": {
+        "id": 130        
+    },    "Medieval": {
+        "id": 131        
+    },    "Regency": {
+        "id": 132        
+    },    "Renaissance": {
+        "id": 133        
+    },    "Christmas": {
+        "id": 134        
+    },    "Family": {
+        "id": 135        
+    },    "Halloween": {
+        "id": 136        
+    },    "Humorous": {
+        "id": 137        
+    },    "Crime": {
+        "id": 138        
+    },    "Ghost": {
+        "id": 139        
+    },    "Occult": {
+        "id": 140        
+    },    "Undead": {
+        "id": 141        
+    },    "Weird fiction": {
+        "id": 142        
+    },    "Black comedy": {
+        "id": 143        
+    },    "Parody": {
+        "id": 144        
+    },    "Satire": {
+        "id": 145        
+    },    "Gay": {
+        "id": 146        
+    },    "Lesbian": {
+        "id": 147        
+    },    "African": {
+        "id": 148        
+    },    "American / African American": {
+        "id": 149        
+    },    "American / General": {
+        "id": 150        
+    },    "Ancient & Classical": {
+        "id": 151        
+    },    "Asian / Chinese": {
+        "id": 152        
+    },    "Asian / General": {
+        "id": 153        
+    },    "Asian / Indic": {
+        "id": 154        
+    },    "Asian / Japanese": {
+        "id": 155        
+    },    "Australian & Oceanian": {
+        "id": 156        
+    },    "Canadian": {
+        "id": 157        
+    },    "Amateur sleuth": {
+        "id": 158        
+    },    "Cozy": {
+        "id": 159        
+    },    "Hard-Boiled": {
+        "id": 160        
+    },    "International crime": {
+        "id": 161        
+    },    "Police Procedural": {
+        "id": 162        
+    },    "Short Stories": {
+        "id": 163        
+    },    "Traditional British": {
+        "id": 164        
+    },    "Women Sleuths": {
+        "id": 165        
+    },    "American": {
+        "id": 166        
+    },    "Asian": {
+        "id": 167        
+    },    "European": {
+        "id": 168        
+    },    "Middle Eastern": {
+        "id": 169        
+    },    "Russian": {
+        "id": 170        
+    },    "Apocalyptic": {
+        "id": 171        
+    },    "Cyberpunk": {
+        "id": 172        
+    },    "Hard sci-fi": {
+        "id": 173        
+    },    "High tech": {
+        "id": 174        
+    },    "Military": {
+        "id": 175        
+    },    "Space opera": {
+        "id": 176        
+    },    "Steampunk & retropunk": {
+        "id": 177        
+    },    "Family sagas": {
+        "id": 178        
+    },    "Legal": {
+        "id": 179        
+    },    "Media tie-in": {
+        "id": 180        
+    },    "Medical": {
+        "id": 181        
+    },    "Political": {
+        "id": 182        
+    },    "Psychological": {
+        "id": 183        
+    },    "Spiritual & metaphysical": {
+        "id": 184        
+    },    "Technological": {
+        "id": 185        
+    },    "Action & suspense": {
+        "id": 186        
+    },    "Courtroom": {
+        "id": 187        
+    },    "Crime thriller": {
+        "id": 188        
+    },    "Psychological thriller": {
+        "id": 189        
+    },    "Spies & espionage": {
+        "id": 190        
+    },    "Supernatural": {
+        "id": 191        
+    },    "Chick lit": {
+        "id": 192        
+    },    "Feminist": {
+        "id": 193        
+    },    "Anthology": {
+        "id": 194        
+    },    "Chick Lit": {
+        "id": 195        
+    },    "Drama": {
+        "id": 196        
+    },    "Fairy Tales": {
+        "id": 197        
+    },    "Graphic Novel": {
+        "id": 198        
+    },    "Americana": {
+        "id": 199        
+    },    "Apparel, costumes, & textiles": {
+        "id": 200        
+    },    "Autographs": {
+        "id": 201        
+    },    "Books": {
+        "id": 202        
+    },    "Buttons & pins": {
+        "id": 203        
+    },    "Canadiana": {
+        "id": 204        
+    },    "Care & restoration": {
+        "id": 205        
+    },    "Clocks & watches": {
+        "id": 206        
+    },    "Coins & stamps": {
+        "id": 207        
+    },    "Applied arts": {
+        "id": 208        
+    },    "Architecture": {
+        "id": 209        
+    },    "Art - how to": {
+        "id": 210        
+    },    "Art history": {
+        "id": 211        
+    },    "Artists": {
+        "id": 212        
+    },    "Crafts - General": {
+        "id": 213        
+    },    "Crafts - Needlework General": {
+        "id": 214        
+    },    "Crafts - Needlework/Crocheting": {
+        "id": 215        
+    },    "Fine art": {
+        "id": 216        
+    },    "Performing arts": {
+        "id": 217        
+    },    "Adventurers & explorers": {
+        "id": 218        
+    },    "Artists, architects, & photographers": {
+        "id": 219        
+    },    "Autobiographies & Memoirs": {
+        "id": 220        
+    },    "Biographical anthologies": {
+        "id": 221        
+    },    "Business biography": {
+        "id": 222        
+    },    "Celebrity biography": {
+        "id": 223        
+    },    "Criminals & outlaws": {
+        "id": 224        
+    },    "Cultural heritage": {
+        "id": 225        
+    },    "Editors, journalists, & publishers": {
+        "id": 226        
+    },    "Environmentalists & naturalists": {
+        "id": 227        
+    },    "Accounting": {
+        "id": 228        
+    },    "Accounting / financial": {
+        "id": 229        
+    },    "Accounting / governmental": {
+        "id": 230        
+    },    "Accounting / managerial": {
+        "id": 231        
+    },    "Accounting / standards (GAAP, IFRS, etc.)": {
+        "id": 232        
+    },    "Advertising": {
+        "id": 233        
+    },    "Auditing": {
+        "id": 234        
+    },    "Banks & banking": {
+        "id": 235        
+    },    "Bookkeeping": {
+        "id": 236        
+    },    "Budgeting": {
+        "id": 237        
+    },    "Architecture & Engineering": {
+        "id": 238        
+    },    "Arts": {
+        "id": 239        
+    },    "Business Management": {
+        "id": 240        
+    },    "Computer Science": {
+        "id": 241        
+    },    "Construction": {
+        "id": 242        
+    },    "Culinary arts": {
+        "id": 243        
+    },    "Design": {
+        "id": 244        
+    },    "Education": {
+        "id": 245        
+    },    "Facilities Management": {
+        "id": 246        
+    },    "Adventure & Adventurers": {
+        "id": 247        
+    },    "Animals / Animal Welfare": {
+        "id": 248        
+    },    "Animals / Apes, Monkeys, etc.": {
+        "id": 249        
+    },    "Animals / Baby Animals": {
+        "id": 250        
+    },    "Animals / Bears": {
+        "id": 251        
+    },    "Animals / Birds": {
+        "id": 252        
+    },    "Animals / Butterflies, Moths & Caterpillars": {
+        "id": 253        
+    },    "Animals / Cats": {
+        "id": 254        
+    },    "Bioinformatics": {
+        "id": 255        
+    },    "Blogging": {
+        "id": 256        
+    },    "Buyer’s guides": {
+        "id": 257        
+    },    "Calculators": {
+        "id": 258        
+    },    "CD-DVD technology": {
+        "id": 259        
+    },    "Certification guides / A+": {
+        "id": 260        
+    },    "Certification guides / MCSE": {
+        "id": 261        
+    },    "Client-server computing": {
+        "id": 262        
+    },    "Compilers": {
+        "id": 263        
+    },    "Afghani": {
+        "id": 264        
+    },    "American / California Style": {
+        "id": 265        
+    },    "American / Middle Atlantic States": {
+        "id": 266        
+    },    "American / Middle Western States": {
+        "id": 267        
+    },    "American / New England": {
+        "id": 268        
+    },    "American / Northwestern States": {
+        "id": 269        
+    },    "American / Southern States": {
+        "id": 270        
+    },    "American / Southwestern States": {
+        "id": 271        
+    },    "Administration / elementary & secondary": {
+        "id": 272        
+    },    "Administration / facility management": {
+        "id": 273        
+    },    "Administration / general": {
+        "id": 274        
+    },    "Administration / higher": {
+        "id": 275        
+    },    "Administration / school superintendents & principals": {
+        "id": 276        
+    },    "Adult & continuing education": {
+        "id": 277        
+    },    "Aims & objectives": {
+        "id": 278        
+    },    "Behavioral management": {
+        "id": 279        
+    },    "Bilingual education": {
+        "id": 280        
+    },    "Careers in education": {
+        "id": 281        
+    },    "Acoustics & Sound": {
+        "id": 282        
+    },    "Aeronautics & Astronautics": {
+        "id": 283        
+    },    "Agriculture": {
+        "id": 284        
+    },    "Agriculture / Agronomy / Crop Science": {
+        "id": 285        
+    },    "Agriculture / Agronomy / General": {
+        "id": 286        
+    },    "Agriculture / Agronomy / Soil Science": {
+        "id": 287        
+    },    "Agriculture / Sustainable Agriculture": {
+        "id": 288        
+    },    "Agriculture / Tropical Agriculture": {
+        "id": 289        
+    },    "Automation": {
+        "id": 290        
+    },    "Automotive": {
+        "id": 291        
+    },    "Astrology": {
+        "id": 292        
+    },    "Celebrity culture": {
+        "id": 293        
+    },    "Computer gaming": {
+        "id": 294        
+    },    "Entertainment industry": {
+        "id": 295        
+    },    "Gambling": {
+        "id": 296        
+    },    "Games, puzzles, & brain twisters": {
+        "id": 297        
+    },    "History & Criticism": {
+        "id": 298        
+    },    "Humor & satire": {
+        "id": 299        
+    },    "Bibliographies & indices": {
+        "id": 300        
+    },    "Catalogs": {
+        "id": 301        
+    },    "Curiosities & wonders": {
+        "id": 302        
+    },    "Questions & answers": {
+        "id": 303        
+    },    "Trivia": {
+        "id": 304        
+    },    "Yearbooks & annuals": {
+        "id": 305        
+    },    "Acupressure & acupuncture": {
+        "id": 306        
+    },    "Aerobics": {
+        "id": 307        
+    },    "Aging well": {
+        "id": 308        
+    },    "Allergies": {
+        "id": 309        
+    },    "Alternative medicine": {
+        "id": 310        
+    },    "Alternative therapies": {
+        "id": 311        
+    },    "Aromatherapy": {
+        "id": 312        
+    },    "Beauty & fashion": {
+        "id": 313        
+    },    "Body art": {
+        "id": 314        
+    },    "Body cleansing & detoxification": {
+        "id": 315        
+    },    "Africa": {
+        "id": 316        
+    },    "Caribbean & West Indies / Cuba": {
+        "id": 317        
+    },    "Caribbean & West Indies / General": {
+        "id": 318        
+    },    "Civilization": {
+        "id": 319        
+    },    "Contemporary political": {
+        "id": 320        
+    },    "Antiques & collectibles": {
+        "id": 321        
+    },    "Apartment living": {
+        "id": 322        
+    },    "Cement": {
+        "id": 323        
+    },    "Ceramics": {
+        "id": 324        
+    },    "Cleaning & caretaking": {
+        "id": 325        
+    },    "Crafts & Hobbies": {
+        "id": 326        
+    },    "Decks & patios": {
+        "id": 327        
+    },    "Decorating": {
+        "id": 328        
+    },    "Do-it-yourself / carpentry": {
+        "id": 329        
+    },    "Do-it-yourself / general": {
+        "id": 330        
+    },    "12-step programs": {
+        "id": 331        
+    },    "Daily affirmations": {
+        "id": 332        
+    },    "General self-help": {
+        "id": 333        
+    },    "Meditation": {
+        "id": 334        
+    },    "Personal inspiration": {
+        "id": 335        
+    },    "Spiritual inspiration": {
+        "id": 336        
+    },    "African Languages": {
+        "id": 337        
+    },    "Ancient Languages": {
+        "id": 338        
+    },    "Arabic": {
+        "id": 339        
+    },    "Baltic Languages": {
+        "id": 340        
+    },    "Bengali": {
+        "id": 341        
+    },    "Burmese": {
+        "id": 342        
+    },    "Cantonese": {
+        "id": 343        
+    },    "Celtic Languages": {
+        "id": 344        
+    },    "Creole Languages": {
+        "id": 345        
+    },    "Czech": {
+        "id": 346        
+    },    "Administrative Law & Regulatory Practice": {
+        "id": 347        
+    },    "Agricultural": {
+        "id": 348        
+    },    "Air & Space": {
+        "id": 349        
+    },    "Alternative Dispute Resolution": {
+        "id": 350        
+    },    "Annotations & Citations": {
+        "id": 351        
+    },    "Antitrust": {
+        "id": 352        
+    },    "Arbitration, Negotiation, Mediation": {
+        "id": 353        
+    },    "Banking": {
+        "id": 354        
+    },    "Bankruptcy & insolvency": {
+        "id": 355        
+    },    "Biographies": {
+        "id": 356        
+    },    "Coming out": {
+        "id": 357        
+    },    "Dating & relationships": {
+        "id": 358        
+    },    "Essays": {
+        "id": 359        
+    },    "Politics & society": {
+        "id": 360        
+    },    "Sex & health": {
+        "id": 361        
+    },    "Sociology": {
+        "id": 362        
+    },    "American / Asian American": {
+        "id": 363        
+    },    "American / Hispanic American": {
+        "id": 364        
+    },    "Alternative": {
+        "id": 365        
+    },    "Ballet": {
+        "id": 366        
+    },    "Big Band & Swing": {
+        "id": 367        
+    },    "Bluegrass": {
+        "id": 368        
+    },    "Blues": {
+        "id": 369        
+    },    "Chamber": {
+        "id": 370        
+    },    "Children’s": {
+        "id": 371        
+    },    "Choral": {
+        "id": 372        
+    },    "Classical": {
+        "id": 373        
+    },    "Aliens & UFOs": {
+        "id": 374        
+    },    "Angels & Fairies": {
+        "id": 375        
+    },    "Auras & colors": {
+        "id": 376        
+    },    "Dream interpretation": {
+        "id": 377        
+    },    "Fortune telling": {
+        "id": 378        
+    },    "Magic": {
+        "id": 379        
+    },    "Mysticism": {
+        "id": 380        
+    },    "Near-death experiences": {
+        "id": 381        
+    },    "Absentee parents": {
+        "id": 382        
+    },    "Adoption": {
+        "id": 383        
+    },    "Baby names": {
+        "id": 384        
+    },    "Bedtime stories": {
+        "id": 385        
+    },    "Breast Feeding": {
+        "id": 386        
+    },    "Child nutrition": {
+        "id": 387        
+    },    "Childhood development": {
+        "id": 388        
+    },    "Childhood obesity": {
+        "id": 389        
+    },    "Childhood psychology": {
+        "id": 390        
+    },    "Divorce & children": {
+        "id": 391        
+    },    "Aesthetics": {
+        "id": 392        
+    },    "American philosophy": {
+        "id": 393        
+    },    "Ancient philosophy": {
+        "id": 394        
+    },    "Asian philosophy": {
+        "id": 395        
+    },    "Buddhist": {
+        "id": 396        
+    },    "Contemporary philosophy": {
+        "id": 397        
+    },    "Criticism": {
+        "id": 398        
+    },    "Eastern": {
+        "id": 399        
+    },    "Epistemology": {
+        "id": 400        
+    },    "Activism": {
+        "id": 401        
+    },    "Arms control": {
+        "id": 402        
+    },    "City planning": {
+        "id": 403        
+    },    "Civil & human rights": {
+        "id": 404        
+    },    "Communism & socialism": {
+        "id": 405        
+    },    "Congress": {
+        "id": 406        
+    },    "Current affairs": {
+        "id": 407        
+    },    "Democracy": {
+        "id": 408        
+    },    "Economic policy": {
+        "id": 409        
+    },    "Addiction": {
+        "id": 410        
+    },    "ADHD": {
+        "id": 411        
+    },    "Adolescent psychology": {
+        "id": 412        
+    },    "Anxiety": {
+        "id": 413        
+    },    "Applied psychology": {
+        "id": 414        
+    },    "Assessment, testing, & measurement": {
+        "id": 415        
+    },    "Child Abuse": {
+        "id": 416        
+    },    "Clinical psychology": {
+        "id": 417        
+    },    "Cognitive psychology": {
+        "id": 418        
+    },    "Creative ability": {
+        "id": 419        
+    },    "Playwriting": {
+        "id": 420        
+    },    "Screenwriting": {
+        "id": 421        
+    },    "Self-publishing": {
+        "id": 422        
+    },    "Almanac": {
+        "id": 423        
+    },    "Atlases": {
+        "id": 424        
+    },    "Careers": {
+        "id": 425        
+    },    "Consumer guides": {
+        "id": 426        
+    },    "Dictionaries": {
+        "id": 427        
+    },    "Directories": {
+        "id": 428        
+    },    "Encyclopedias": {
+        "id": 429        
+    },    "Etiquette": {
+        "id": 430        
+    },    "Etymology": {
+        "id": 431        
+    },    "Foreign language study": {
+        "id": 432        
+    },    "Abuse / domestic partner abuse": {
+        "id": 433        
+    },    "Abuse / elder abuse": {
+        "id": 434        
+    },    "Abuse / general": {
+        "id": 435        
+    },    "Aging": {
+        "id": 436        
+    },    "Alternative family": {
+        "id": 437        
+    },    "Anger": {
+        "id": 438        
+    },    "Attention deficit disorder (ADD-ADHD)": {
+        "id": 439        
+    },    "Autism spectrum disorders": {
+        "id": 440        
+    },    "Balancing work & family": {
+        "id": 441        
+    },    "Antiquities & Archaeology": {
+        "id": 442        
+    },    "Atheism/Agnosticism": {
+        "id": 443        
+    },    "Bahá’í": {
+        "id": 444        
+    },    "Bibles": {
+        "id": 445        
+    },    "Biblical Biography / General": {
+        "id": 446        
+    },    "Biblical Biography / New Testament": {
+        "id": 447        
+    },    "Biblical Biography / Old Testament": {
+        "id": 448        
+    },    "Biblical Commentary / General": {
+        "id": 449        
+    },    "Biblical Commentary / New Testament": {
+        "id": 450        
+    },    "Agricultural science": {
+        "id": 451        
+    },    "Amateur naturalist": {
+        "id": 452        
+    },    "Animal husbandry": {
+        "id": 453        
+    },    "Anthropology": {
+        "id": 454        
+    },    "Applied Sciences": {
+        "id": 455        
+    },    "Archaeology": {
+        "id": 456        
+    },    "Astronomy": {
+        "id": 457        
+    },    "Biology": {
+        "id": 458        
+    },    "Abuse": {
+        "id": 459        
+    },    "Addiction & recovery": {
+        "id": 460        
+    },    "Adult Children of Substance Abusers": {
+        "id": 461        
+    },    "Anger management": {
+        "id": 462        
+    },    "Anxieties & Phobias": {
+        "id": 463        
+    },    "Codependency": {
+        "id": 464        
+    },    "Confidence & self-esteem": {
+        "id": 465        
+    },    "Creativity": {
+        "id": 466        
+    },    "Death, Grief, Bereavement": {
+        "id": 467        
+    },    "Depression": {
+        "id": 468        
+    },    "History of sex": {
+        "id": 469        
+    },    "Men's sexuality": {
+        "id": 470        
+    },    "Prostitution": {
+        "id": 471        
+    },    "Sex & culture": {
+        "id": 472        
+    },    "Sex & politics": {
+        "id": 473        
+    },    "Sex & religion": {
+        "id": 474        
+    },    "Sex guides & how tos": {
+        "id": 475        
+    },    "Sex research": {
+        "id": 476        
+    },    "Sexual alternatives": {
+        "id": 477        
+    },    "Sexual behavior": {
+        "id": 478        
+    },    "Abortion & Birth Control": {
+        "id": 479        
+    },    "Africana": {
+        "id": 480        
+    },    "Agriculture & food": {
+        "id": 481        
+    },    "Anthropology / Cultural": {
+        "id": 482        
+    },    "Anthropology / Physical": {
+        "id": 483        
+    },    "Atheistic & Agnostic studies": {
+        "id": 484        
+    },    "Black studies (global)": {
+        "id": 485        
+    },    "Children's Studies": {
+        "id": 486        
+    },    "Archery": {
+        "id": 487        
+    },    "Backpacking": {
+        "id": 488        
+    },    "Ballooning": {
+        "id": 489        
+    },    "Baseball": {
+        "id": 490        
+    },    "Baseball / Essays & Writings": {
+        "id": 491        
+    },    "Baseball / History": {
+        "id": 492        
+    },    "Baseball / Statistics": {
+        "id": 493        
+    },    "Basketball": {
+        "id": 494        
+    },    "Bicycling": {
+        "id": 495        
+    },    "Aircraft": {
+        "id": 496        
+    },    "Automobiles": {
+        "id": 497        
+    },    "Automotive / Antique & Classic": {
+        "id": 498        
+    },    "Automotive / Buyer’s Guides": {
+        "id": 499        
+    },    "Automotive / Customizing": {
+        "id": 500        
+    },    "Automotive / History": {
+        "id": 501        
+    },    "Automotive / Pictorial": {
+        "id": 502        
+    },    "Automotive / Repair & Maintenance": {
+        "id": 503        
+    },    "Automotive / Trucks": {
+        "id": 504        
+    },    "Aviation / Commercial": {
+        "id": 505        
+    },    "Amusement & theme parks": {
+        "id": 506        
+    },    "Bed & Breakfast": {
+        "id": 507        
+    },    "Budget": {
+        "id": 508        
+    },    "By region": {
+        "id": 509        
+    },    "Camping & RVing": {
+        "id": 510        
+    },    "Cruises": {
+        "id": 511        
+    },    "Essays & Travelogues": {
+        "id": 512        
+    },    "Hikes & walks": {
+        "id": 513        
+    },    "Museums of the World": {
+        "id": 514        
+    },    "Assassinations & Conspiracies": {
+        "id": 515        
+    },    "Computer Crime": {
+        "id": 516        
+    },    "Drug trade": {
+        "id": 517        
+    },    "Espionage": {
+        "id": 518        
+    },    "Family violence": {
+        "id": 519        
+    },    "General crimes": {
+        "id": 520        
+    },    "Hoaxes & deceptions": {
+        "id": 521        
+    },    "Identity theft": {
+        "id": 522        
+    },    "Kidnapping, abduction, hostage taking": {
+        "id": 523        
+    },    "Missing persons": {
+        "id": 524        
+    },    "Bride preparation": {
+        "id": 525        
+    },    "Groom preparation": {
+        "id": 526        
+    },    "Honeymoon planning": {
+        "id": 527        
+    },    "Locations": {
+        "id": 528        
+    },    "Wedding customs": {
+        "id": 529        
+    },    "Wedding planning & checklists": {
+        "id": 530        
+    },    "Biography & Autobiography": {
+        "id": 531        
+    },    "Books & Libraries": {
+        "id": 532        
+    },    "Boys & Men": {
+        "id": 533        
+    },    "Technology": {
+        "id": 534        
+    },    "Caribbean & Latin American": {
+        "id": 535        
+    },    "European / English, Irish, Scottish, Welsh": {
+        "id": 536        
+    },    "European / French": {
+        "id": 537        
+    },    "European / German": {
+        "id": 538        
+    },    "European / Italian": {
+        "id": 539        
+    },    "African Poetry": {
+        "id": 540        
+    },    "American poetry": {
+        "id": 541        
+    },    "Ancient Poetry": {
+        "id": 542        
+    },    "Asian poetry": {
+        "id": 543        
+    },    "Canadian Poetry": {
+        "id": 544        
+    },    "Caribbean Poetry": {
+        "id": 545        
+    },    "Chinese poetry": {
+        "id": 546        
+    },    "Contemporary Poetry": {
+        "id": 547        
+    },    "Action Adventure": {
+        "id": 548        
+    },    "Animation": {
+        "id": 549        
+    },    "Comedy": {
+        "id": 550        
+    },    "Documentary": {
+        "id": 551        
+    },    "Film-Noir": {
+        "id": 552        
+    },
+},
