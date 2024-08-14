@@ -19,11 +19,11 @@ def get_genres(url):
     a_tags = driver.find_elements(By.TAG_NAME, 'a')
     for a_tag in a_tags:
         href = a_tag.get_attribute('href')
-        if href and '/shelves/home/' in href:
+        if href and '/shelves/category/' in href:
             genre_name = a_tag.text.strip()
-            relative_url = href.replace(url, '')  # Store relative URL
+            relative_url = href.replace(url, '')
             if relative_url not in genres:
-                genres[relative_url] = genre_name  # Use the URL as the key and genre name as the value
+                genres[relative_url] = genre_name 
     
     return genres
 
