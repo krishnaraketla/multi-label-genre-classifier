@@ -9,6 +9,7 @@ import time
 from smash_words_genres_scraper import get_genres
 import json
 import pandas as pd
+from tqdm import tqdm
 
 # Set up Selenium with Chrome
 chrome_options = Options()
@@ -66,9 +67,6 @@ def get_genre_ids(genres, genres_map_file='data/genres_map.json'):
         # Check if the genre_name exists in the genres_map
         if genre_name in genres_map:
             genre_ids.append(genres_map[genre_name]['id'])
-        else:
-            print(f"Genre '{genre_name}' not found in genres_map.")
-    
     return genre_ids
     
 if __name__ == "__main__":
@@ -80,9 +78,7 @@ if __name__ == "__main__":
     data = []
     
     # Iterate over each book in the books_map
-    for book_url, book_title in books_map.items():
-        print(f"Processing {book_title}...")
-        
+    for book_url, book_title in tqdm(books_map.items(), desc="Processing Books", unit="book"):
         # Get the description and genres
         description = get_description(book_url)
         genres = get_genres(book_url)
@@ -100,7 +96,7 @@ if __name__ == "__main__":
     df = pd.DataFrame(data)
     
     # Save the DataFrame to a CSV file
-    df.to_csv('books_data.csv', index=False, encoding='utf-8')
+    df.to_csv('data/books_data.csv', index=False, encoding='utf-8')
     
     # Close the browser
     driver.quit()

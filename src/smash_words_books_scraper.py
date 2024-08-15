@@ -1,10 +1,12 @@
+import json
+import csv
+import os
+import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import time
-import json
-import csv
 
 # Set up Selenium with Chrome
 chrome_options = Options()
@@ -22,41 +24,74 @@ def get_books(url):
         href = a_tag.get_attribute('href')
         if href and '/books/view/' in href:
             book_name = a_tag.text.strip()
-            relative_url = href.replace(url, '')  # Store relative URL
-            if relative_url not in books:
-                books[relative_url] = book_name  # Use the URL as the key and book name as the value
+            books[href] = book_name  # Store the full URL and book name
     
     return books
 
+def save_checkpoint(checkpoint, filename='data/checkpoint_genres.json'):
+    with open(filename, 'w') as f:
+        json.dump(checkpoint, f)
+
+def load_checkpoint(filename='data/checkpoint_genres.json'):
+    if os.path.exists(filename):
+        with open(filename, 'r') as f:
+            return json.load(f)
+    return {}
+
+def save_to_csv(df, csv_file='data/books_data.csv'):
+    if os.path.exists(csv_file):
+        df.to_csv(csv_file, mode='a', header=False, index=False, encoding='utf-8')
+    else:
+        df.to_csv(csv_file, index=False, encoding='utf-8')
+
 if __name__ == "__main__":
+    # Load genres from JSON file
+    with open('data/genres_map.json', 'r', encoding='utf-8') as jsonfile:
+        genres_map = json.load(jsonfile)
 
-    genre_url = 'https://www.smashwords.com/shelves/home/892/any/any'
-    
-    
-    books_map = get_books(genre_url)
-    with open('recommendation/scraping/books_map.json', 'w', encoding='utf-8') as jsonfile:
-        json.dump(books_map, jsonfile, ensure_ascii=False, indent=4)
-        
-    # Load the JSON data
-    with open('recommendation/scraping/books_map.json', 'r', encoding='utf-8') as json_file:
-        data = json.load(json_file)
+    # Load checkpoint
+    checkpoint = load_checkpoint()
 
-    # Open the CSV file for writing
-    with open('recommendation/scraping/books_url.csv', 'w', newline='', encoding='utf-8') as csv_file:
-        csv_writer = csv.writer(csv_file)
-    
-        # Write the header
-        csv_writer.writerow(['title', 'url'])
-        
-        # Write the data
-        for url, title in data.items():
-            # Replace newline characters with a space
-            cleaned_title = title.replace('\n', ' ')
-            csv_writer.writerow([cleaned_title, url])
+    # Initialize data storage
+    all_data = []
 
-    print("Data has been converted to 'output.csv'")
-        
-    print("books with have been saved to 'books_map.json'")
+    # Start from the last saved checkpoint
+    start_index = checkpoint.get('last_genre_index', 0)
+
+    # Iterate over the genres starting from the last checkpoint
+    for idx, (genre_name, genre_info) in enumerate(list(genres_map.items())[start_index:], start=start_index):
+        print(f"Processing genre {idx+1}/{len(genres_map)}: {genre_name}")
+
+        # Get books for the current genre
+        books_map = get_books(genre_info['genre_url'])
+
+        # Append books to data list
+        for url, title in books_map.items():
+            all_data.append({'title': title.replace('\n', ' '), 'url': url, 'genre': genre_name})
+
+        # Save checkpoint every 10 genres
+        if (idx + 1) % 10 == 0 or (idx + 1) == len(genres_map):
+            # Create a DataFrame
+            df = pd.DataFrame(all_data)
+
+            # Save to CSV
+            save_to_csv(df)
+
+            # Clear the list to free memory
+            all_data.clear()
+
+            # Update and save checkpoint
+            checkpoint['last_genre_index'] = idx + 1
+            save_checkpoint(checkpoint)
+            print(f"Checkpoint saved at genre {idx + 1}.")
+
+    # Save any remaining data
+    if all_data:
+        df = pd.DataFrame(all_data)
+        save_to_csv(df)
+        all_data.clear()
 
     # Close the browser
-    driver.quit()   
+    driver.quit()
+
+    print("Scraping complete. Data saved to 'books_data.csv'")
