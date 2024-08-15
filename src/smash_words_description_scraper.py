@@ -2,9 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
 import time
 from smash_words_genres_scraper import get_genres
 import json
@@ -87,6 +84,7 @@ if __name__ == "__main__":
     
     # Check where to start from (if checkpoint exists)
     start_index = load_checkpoint(csv_file)
+    print(start_index)
     
     # Create a list to store the data
     data = []
@@ -109,10 +107,11 @@ if __name__ == "__main__":
         # Save the checkpoint every 100 books
         if i % checkpoint_interval == 0:
             df = pd.DataFrame(data)
-            if start_index > 0:
+            if os.path.exists(csv_file):
                 # Append to the existing CSV without writing the header
                 df.to_csv(csv_file, mode='a', header=False, index=False, encoding='utf-8')
             else:
+                # Write with header if the file doesn't exist
                 df.to_csv(csv_file, index=False, encoding='utf-8')
             data = []  # Clear the list after saving
             print(f"Checkpoint saved after {i} books")
@@ -120,7 +119,7 @@ if __name__ == "__main__":
     # Save any remaining data
     if data:
         df = pd.DataFrame(data)
-        if start_index > 0:
+        if os.path.exists(csv_file):
             df.to_csv(csv_file, mode='a', header=False, index=False, encoding='utf-8')
         else:
             df.to_csv(csv_file, index=False, encoding='utf-8')
