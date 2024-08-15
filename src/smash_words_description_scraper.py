@@ -10,6 +10,7 @@ from smash_words_genres_scraper import get_genres
 import json
 import pandas as pd
 from tqdm import tqdm
+import os
 
 # Set up Selenium with Chrome
 chrome_options = Options()
@@ -68,17 +69,30 @@ def get_genre_ids(genres, genres_map_file='data/genres_map.json'):
         if genre_name in genres_map:
             genre_ids.append(genres_map[genre_name]['id'])
     return genre_ids
-    
+
+def load_checkpoint(csv_file):
+    if os.path.exists(csv_file):
+        df = pd.read_csv(csv_file, encoding='utf-8')
+        processed_books = df.shape[0]
+        return processed_books
+    return 0
+
 if __name__ == "__main__":
+    csv_file = 'data/desc_genres_data.csv'
+    checkpoint_interval = 100
+    
     # Load the books map
     with open('data/books_map.json', 'r', encoding='utf-8') as jsonfile:
         books_map = json.load(jsonfile)
     
+    # Check where to start from (if checkpoint exists)
+    start_index = load_checkpoint(csv_file)
+    
     # Create a list to store the data
     data = []
     
-    # Iterate over each book in the books_map
-    for book_url, book_title in tqdm(books_map.items(), desc="Processing Books", unit="book"):
+    # Iterate over each book in the books_map starting from the checkpoint
+    for i, (book_url, book_title) in enumerate(tqdm(list(books_map.items())[start_index:], desc="Processing Books", unit="book"), start=start_index + 1):
         # Get the description and genres
         description = get_description(book_url)
         genres = get_genres(book_url)
@@ -91,14 +105,27 @@ if __name__ == "__main__":
             "description": description,
             "genres": ", ".join(map(str, genre_ids))
         })
+        
+        # Save the checkpoint every 100 books
+        if i % checkpoint_interval == 0:
+            df = pd.DataFrame(data)
+            if start_index > 0:
+                # Append to the existing CSV without writing the header
+                df.to_csv(csv_file, mode='a', header=False, index=False, encoding='utf-8')
+            else:
+                df.to_csv(csv_file, index=False, encoding='utf-8')
+            data = []  # Clear the list after saving
+            print(f"Checkpoint saved after {i} books")
     
-    # Create a DataFrame from the data
-    df = pd.DataFrame(data)
-    
-    # Save the DataFrame to a CSV file
-    df.to_csv('data/books_data.csv', index=False, encoding='utf-8')
+    # Save any remaining data
+    if data:
+        df = pd.DataFrame(data)
+        if start_index > 0:
+            df.to_csv(csv_file, mode='a', header=False, index=False, encoding='utf-8')
+        else:
+            df.to_csv(csv_file, index=False, encoding='utf-8')
     
     # Close the browser
     driver.quit()
 
-    print("Data saved to 'books_data.csv'")
+    print(f"Data saved to '{csv_file}'")
